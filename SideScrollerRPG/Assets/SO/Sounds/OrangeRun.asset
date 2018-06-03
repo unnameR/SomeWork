@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1413fab84fc0f4ead911362cc1340e, type: 3}
+  m_Name: OrangeRun
+  m_EditorClassIdentifier: 
+  _name: OrangeRun
+  clips:
+  - {fileID: 8300000, guid: 872812852babc1e4388e7ff9b022e136, type: 3}
+  - {fileID: 8300000, guid: 20330d52545a43346a69f543c267518d, type: 3}
+  - {fileID: 8300000, guid: 2bb0daac09c8bb74aad8ca8d0ed04c92, type: 3}
+  - {fileID: 8300000, guid: 47085b8e9cbbc5449a93cda64b9bd231, type: 3}
+  - {fileID: 8300000, guid: 2f8b624c79026ce4ab1091494e8d74f2, type: 3}
+  loop: 1
+  playOnAwake: 0
+  volume: 0.63
+  source: {fileID: 0}

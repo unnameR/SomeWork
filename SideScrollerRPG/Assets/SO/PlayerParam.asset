@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 284527713e4246247bee99987d8fa9a6, type: 3}
+  m_Name: PlayerParam
+  m_EditorClassIdentifier: 
+  maxHeals: 100
+  damage: 10
+  magazineSize: 10
+  bulletSplash: 1
+  fireRate: 10
+  bulletSpeed: 12
+  pushbackPower: 0
+  moneyBonus: 1
+  reloadTime: 0.25
+  grenadeDamage: 100
+  grenadeCD: 1
+  healPower: 0.5
+  healCD: 30
+  freezeTime: 2
+  freezeCD: 30
+  maxUpgradeLvl: 5
+  magazineSizeLvl: 0
+  damageLvl: 0
+  pushbackPowerLvl: 0
+  moneyBonusLvl: 0
+  armorLvl: 0
+  bulletSplashLvl: 0
+  grenadeDamageLvl: 0
+  healCDLvl: 0
+  freezeCDLvl: 0
+  score: 0
+  money: 57555
+  waveCount: 20
+  isExitGame: 0
+  levelEnd: 1
+  soundVolume: 1
+  musicVolume: 0.62974596
+  currentFileName: 
+  levelEndMoneyDrop: 435
+  levelEndHealthLeft: -5
+  levelEndEnemyKilled: 29
+  levelEndTimeLeft: 0

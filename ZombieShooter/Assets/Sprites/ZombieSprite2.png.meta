@@ -1,0 +1,734 @@
+fileFormatVersion: 2
+guid: 5bbd135c18bc0e4468b997b02325de4d
+timeCreated: 1495479652
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: ZombieSprite2_0
+    21300002: ZombieSprite2_1
+    21300004: ZombieSprite2_2
+    21300006: ZombieSprite2_3
+    21300008: ZombieSprite2_4
+    21300010: ZombieSprite2_5
+    21300012: ZombieSprite2_6
+    21300014: ZombieSprite2_7
+    21300016: ZombieSprite2_9
+    21300018: ZombieSprite2_11
+    21300020: ZombieSprite2_12
+    21300022: ZombieSprite2_13
+    21300024: ZombieSprite2_14
+    21300026: ZombieSprite2_15
+    21300028: ZombieSprite2_16
+    21300030: ZombieSprite2_17
+    21300032: ZombieSprite2_18
+    21300034: ZombieSprite2_19
+    21300036: ZombieSprite2_20
+    21300038: ZombieSprite2_21
+    21300040: ZombieSprite2_22
+    21300042: ZombieSprite2_23
+    21300044: ZombieSprite2_24
+    21300046: ZombieSprite2_25
+    21300048: ZombieSprite2_26
+    21300050: ZombieSprite2_27
+    21300052: ZombieSprite2_28
+    21300054: ZombieSprite2_29
+    21300056: ZombieSprite2_30
+    21300058: ZombieSprite2_31
+    21300060: ZombieSprite2_32
+    21300062: ZombieSprite2_33
+    21300064: ZombieSprite2_34
+    21300066: ZombieSprite2_36
+    21300068: ZombieSprite2_38
+    21300070: ZombieSprite2_39
+    21300072: ZombieSprite2_40
+    21300074: ZombieSprite2_41
+    21300076: ZombieSprite2_42
+    21300078: ZombieSprite2_43
+    21300080: ZombieSprite2_44
+    21300082: ZombieSprite2_45
+    21300084: ZombieSprite2_46
+    21300086: ZombieSprite2_47
+    21300088: ZombieSprite2_48
+    21300090: ZombieSprite2_49
+    21300092: ZombieSprite2_50
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ZombieSprite2_0
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 730
+        width: 79
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 728
+        width: 79
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_2
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 730
+        width: 82
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_3
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 724
+        width: 82
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_4
+      rect:
+        serializedVersion: 2
+        x: 850
+        y: 699
+        width: 65
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_5
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 696
+        width: 77
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_6
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 703
+        width: 76
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_7
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 715
+        width: 74
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_9
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 701
+        width: 69
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_11
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 699
+        width: 68
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_12
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 699
+        width: 64
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_13
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 359
+        width: 6
+        height: 334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_14
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 558
+        width: 64
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_15
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 554
+        width: 81
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_16
+      rect:
+        serializedVersion: 2
+        x: 346
+        y: 555
+        width: 102
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_17
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 556
+        width: 96
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_18
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 555
+        width: 68
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_19
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 494
+        width: 64
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_20
+      rect:
+        serializedVersion: 2
+        x: 926
+        y: 492
+        width: 74
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_21
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 490
+        width: 81
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_22
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 494
+        width: 95
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_23
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 491
+        width: 83
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_24
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 387
+        width: 68
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_25
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 384
+        width: 85
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_26
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 387
+        width: 112
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_27
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 384
+        width: 134
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_28
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 384
+        width: 134
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_29
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 336
+        width: 105
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_30
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 336
+        width: 117
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_31
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 336
+        width: 104
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_32
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 336
+        width: 87
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_33
+      rect:
+        serializedVersion: 2
+        x: 1273
+        y: 341
+        width: 101
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_34
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 304
+        width: 143
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_36
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 304
+        width: 158
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_38
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 302
+        width: 159
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_39
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 136
+        width: 77
+        height: 129
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_40
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 109
+        width: 65
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_41
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 108
+        width: 81
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_42
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 109
+        width: 85
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_43
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 109
+        width: 72
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_44
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 109
+        width: 68
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_45
+      rect:
+        serializedVersion: 2
+        x: 590
+        y: 110
+        width: 72
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_46
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 136
+        width: 90
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_47
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 136
+        width: 86
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_48
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 136
+        width: 87
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_49
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 136
+        width: 80
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: ZombieSprite2_50
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 136
+        width: 80
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
