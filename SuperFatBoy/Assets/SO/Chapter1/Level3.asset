@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b805d229e4fafd44a97a64ef45a773a, type: 3}
+  m_Name: Level3
+  m_EditorClassIdentifier: 
+  chapterN: 1
+  levelN: 3
+  attempts: 1
+  medalM: 0
+  medalS: 0
+  isLevelComplete: 0
+  isLevelLock: 0
+  currentTime: 0
+  bestTime: 999
+  forMedalTime: 20
+  levelName: THREATER
+  levelPrefab: {fileID: 1336718668715288, guid: 0ae9e265a32583b48b732bbb45c453ab,
+    type: 2}

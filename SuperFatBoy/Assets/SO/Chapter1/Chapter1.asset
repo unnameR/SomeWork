@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b2b8215532969488d08571f693bc6b, type: 3}
+  m_Name: Chapter1
+  m_EditorClassIdentifier: 
+  chapterName: Forest
+  bossUnlockLevelCount: 6
+  progress: 0
+  isLock: 0
+  background: {fileID: 21300000, guid: 03c9a29a48770f249a8d0c4754ec029e, type: 3}
+  levels:
+  - {fileID: 11400000, guid: c65378e9a7b490c4e8664bb21e73d36f, type: 2}
+  - {fileID: 11400000, guid: 505e0883e898a20489a17100547d7c39, type: 2}
+  - {fileID: 11400000, guid: 64cdb67ee3405384facd2db0739b0083, type: 2}
+  - {fileID: 11400000, guid: d2f9a0e2c25c8e64ba7582eaf40c8792, type: 2}
+  - {fileID: 11400000, guid: d924350df6d641b48a15f6a8a9a9c66d, type: 2}
+  - {fileID: 11400000, guid: ac841fad3d7412d43bd56a1e80b8210c, type: 2}
+  - {fileID: 11400000, guid: 1e654a7ac1cf87a4cabc44f39cdb4569, type: 2}
+  - {fileID: 11400000, guid: 28931fac91efb654dba150345b37714e, type: 2}
+  - {fileID: 11400000, guid: 3c7ea3302b879554ba29f9a90d96fe68, type: 2}
+  chapterMainSound: {fileID: 11400000, guid: 0e00a900376b23d479a2cba0b2467c23, type: 2}

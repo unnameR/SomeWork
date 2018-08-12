@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b2b8215532969488d08571f693bc6b, type: 3}
+  m_Name: Chapter3
+  m_EditorClassIdentifier: 
+  chapterName: Factory
+  bossUnlockLevelCount: 8
+  progress: 0
+  isLock: 1
+  background: {fileID: 21300000, guid: 231bebf0b842f2e4cb389095db421f62, type: 3}
+  levels:
+  - {fileID: 11400000, guid: bdb301c88070d144189ed2e32d6b6f4f, type: 2}
+  - {fileID: 11400000, guid: 5d6799772ee11384694e34529e3b12b5, type: 2}
+  - {fileID: 11400000, guid: 01a71d5e127bb0f4db448156224ee50b, type: 2}
+  - {fileID: 11400000, guid: 56d44b85cd170ee43a8cf84f76837f85, type: 2}
+  - {fileID: 11400000, guid: 62898e005959cf544aeb1a2f762ef1bb, type: 2}
+  - {fileID: 11400000, guid: 802e72dc6a13e194bad28210b70c59a5, type: 2}
+  - {fileID: 11400000, guid: 49d121a1d7fdb1141bb6848a86ba21d4, type: 2}
+  - {fileID: 11400000, guid: acdddc80d376fbc48a3f8e511de27a10, type: 2}
+  - {fileID: 11400000, guid: 545655d4d55a1704c918e57b448a3448, type: 2}

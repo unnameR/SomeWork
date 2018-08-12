@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb766b1fe83ddd46a5a908f65a8923b, type: 3}
+  m_Name: HeroMoveSound
+  m_EditorClassIdentifier: 
+  _name: Checkpoint
+  clips:
+  - {fileID: 8300000, guid: cc493092698c86248837c34a55ba2e8a, type: 3}
+  - {fileID: 8300000, guid: 62c2ffcb5f2f1fe499c0748481b1c652, type: 3}
+  loop: 0
+  playOnAwake: 0
+  volume: 0.4
+  source: {fileID: 0}

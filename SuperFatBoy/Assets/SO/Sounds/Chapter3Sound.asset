@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efb766b1fe83ddd46a5a908f65a8923b, type: 3}
+  m_Name: Chapter3Sound
+  m_EditorClassIdentifier: 
+  _name: Checkpoint
+  clips:
+  - {fileID: 8300000, guid: 258c00a6754d50b48bcebd44d7534321, type: 3}
+  - {fileID: 8300000, guid: b01a70443e4b4034a992ac6993816b62, type: 3}
+  loop: 1
+  playOnAwake: 1
+  volume: 0.4
+  source: {fileID: 0}
