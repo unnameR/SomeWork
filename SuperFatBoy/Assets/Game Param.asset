@@ -11,8 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4910fbce6792702488914124c5bc8d7a, type: 3}
   m_Name: Game Param
   m_EditorClassIdentifier: 
-  currentLevel: {fileID: 11400000, guid: d924350df6d641b48a15f6a8a9a9c66d, type: 2}
-  currentChapter: {fileID: 11400000, guid: 64f14828c58a1324f97994911e5897ce, type: 2}
+  currentLevel: {fileID: 11400000, guid: 1e654a7ac1cf87a4cabc44f39cdb4569, type: 2}
+  currentChapter: {fileID: 11400000, guid: a093df5d0f3083140906fbed88ced28b, type: 2}
   playerMoney: 0
   soundVolume: 1
   musicVolume: 0.4

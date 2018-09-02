@@ -4,6 +4,9 @@ using System;
 
 public class EndLevelMenuUI : MonoBehaviour {
 
+    public AwardSO chapter1Award;
+    public AwardSO chapter2Award;
+    public AwardSO chapter3Award;
     public GameParamSO gameParam;
     public GameObject medalGo;
     public GameObject secretGo;
@@ -17,7 +20,7 @@ public class EndLevelMenuUI : MonoBehaviour {
     
     //int attempts;
 
-    void Start()
+    void OnEnable()
     {
         SetChapterProgress();
         UpdateUI();
@@ -60,17 +63,34 @@ public class EndLevelMenuUI : MonoBehaviour {
         int levelscomplete = Array.FindAll<GameLevelSO>(gameParam.currentChapter.levels, l => l.isLevelComplete).Length;
         
         gameParam.currentChapter.progress = medals + secrets + levelscomplete;
+
+        switch (gameParam.currentChapter.chapterName)//гавнецо
+        {
+            case "Forest":
+                if (chapter1Award.condition == gameParam.currentChapter.progress)
+                    chapter1Award.isComplete = true;
+                break;
+            case "Desert":
+                if (chapter2Award.condition == gameParam.currentChapter.progress)
+                    chapter2Award.isComplete = true;
+                break;
+            case "Factory":
+                if (chapter3Award.condition == gameParam.currentChapter.progress)
+                    chapter3Award.isComplete = true;
+                break;
+        }
+
+        DataSaver.SaveData(gameParam.currentChapter, gameParam.currentChapter.chapterName);
+        DataSaver.SaveData(chapter1Award, chapter1Award.awardName);
+        DataSaver.SaveData(chapter2Award, chapter2Award.awardName);
+        DataSaver.SaveData(chapter3Award, chapter3Award.awardName);
     }
     public void NextLevel()
     {
         //анимация смены уровня.
         LevelManager.instance.NextLevel();
     }
-    public void BackToMainMenu()
-    {
-        //анимация смены сцены.
-        LevelManager.instance.BackToMainMenu();
-    }
+    
     public void RestartLevel()
     {
         //анимация рестарта уровня

@@ -26,3 +26,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 49d121a1d7fdb1141bb6848a86ba21d4, type: 2}
   - {fileID: 11400000, guid: acdddc80d376fbc48a3f8e511de27a10, type: 2}
   - {fileID: 11400000, guid: 545655d4d55a1704c918e57b448a3448, type: 2}
+  chapterMainSound: {fileID: 11400000, guid: 8212cbd8f853c95489dc614f9d44ae86, type: 2}

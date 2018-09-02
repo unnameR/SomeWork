@@ -5,11 +5,13 @@ public class LaserBeem : MonoBehaviour {
     public SoundSO sound;
     public LineRenderer laser;
     public LayerMask mask;
+    public LayerMask deactiveMask;
     public Gradient activeGrad;
     public Gradient deactiveGrad;
 
     public bool useTimer;
     public float laserDuration;
+    float maxDistance = 99;
 
     [SerializeField] private bool isActive;
     private float currentTime;
@@ -25,30 +27,43 @@ public class LaserBeem : MonoBehaviour {
                 isActive = !isActive;
             }
         }
-        if (isActive)
-            ActiveLaser();
-        else DeActiveLaser();
+
+        UpdateLaser();
     }
-    void ActiveLaser()
+    void UpdateLaser()
     {
         //AudioManager._instance.PlaySoundEffect(sound);
-
-        laser.colorGradient = activeGrad;
-        Vector2 localStart = transform.localToWorldMatrix.MultiplyPoint(laser.GetPosition(0));
-        Vector2 localEnd = transform.localToWorldMatrix.MultiplyPoint(laser.GetPosition(1));
-        Vector2 direction = localEnd - localStart;
-        float distance = Vector2.Distance(localStart, localEnd);
-
-        RaycastHit2D hit = Physics2D.Raycast(localStart, direction.normalized, distance, mask);
-        //Debug.DrawLine(localStart, localEnd, Color.green);
-        if (hit.collider != null && hit.collider.tag == "Player")
+        Vector3 localStart = transform.localToWorldMatrix.MultiplyPoint(laser.GetPosition(0));
+        Vector3 localEnd = transform.localToWorldMatrix.MultiplyPoint(laser.GetPosition(1));
+        Vector2 direction = localEnd - localStart;//когда direction = 0 конечная точка не перезаписывается
+        //нужно отвязать направление от лазера
+        RaycastHit2D hit;
+        if (isActive)
         {
-            hit.collider.GetComponent<Player>().Die();
+            hit = Physics2D.Raycast(localStart, direction.normalized, maxDistance, mask);            
+            laser.colorGradient = activeGrad;
+        }
+        else
+        {
+            hit = Physics2D.Raycast(localStart, direction.normalized, maxDistance, deactiveMask);
+            laser.colorGradient = deactiveGrad;
+        }
+        if (hit.collider != null )
+        {
+            if (isActive)//при деактивированом лазере, оно не видит игрока и боса. 
+            {    //Но в уровне с боссом он должен видить игрока((..
+            
+                if (hit.collider.tag == "Player")
+                    hit.collider.GetComponent<Player>().Die();
+                else if (hit.collider.tag == "Boss")
+                    hit.collider.GetComponent<BossChapter2>().Die();
+            }
+            if (hit.distance != 0)
+                laser.SetPosition(1, laser.GetPosition(0) + Vector3.up * hit.distance);
         }
     }
-    void DeActiveLaser()
+    public void SetActiveLaser(bool active)
     {
-        laser.colorGradient = deactiveGrad;
-        AudioManager._instance.StopPlay(sound);
+        isActive = active;
     }
 }

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterN: 1
   levelN: 4
-  attempts: 1
+  attempts: 0
   medalM: 0
   medalS: 0
   isLevelComplete: 0
   isLevelLock: 0
+  boss: 0
   currentTime: 0
   bestTime: 999
   forMedalTime: 25

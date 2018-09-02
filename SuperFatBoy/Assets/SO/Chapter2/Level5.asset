@@ -13,10 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterN: 2
   levelN: 5
+  attempts: 0
   medalM: 0
   medalS: 0
   isLevelComplete: 0
-  isLevelLock: 1
-  bestTime: 0
-  forMedalTime: 0
-  levelName: Start
+  isLevelLock: 0
+  boss: 0
+  currentTime: 0
+  bestTime: 999
+  forMedalTime: 30
+  levelName: DEXTEROUS THEFT
+  levelPrefab: {fileID: 1332700562591866, guid: c9afa148cfaa5c14d9de274cf2a9034c,
+    type: 2}

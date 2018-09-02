@@ -18,9 +18,10 @@ MonoBehaviour:
   medalS: 0
   isLevelComplete: 0
   isLevelLock: 0
+  boss: 0
   currentTime: 0
   bestTime: 999
   forMedalTime: 15
-  levelName: STOCK
+  levelName: NOOB
   levelPrefab: {fileID: 1108490148735252, guid: deac1ce504be30e48887a52f2451cbd1,
     type: 2}

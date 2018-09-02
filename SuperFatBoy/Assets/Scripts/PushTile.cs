@@ -5,6 +5,7 @@ using UnityEngine;
 public class PushTile : MonoBehaviour {
 
     public float pushPower;
+    public PushDirection direction;
     public Vector2 size;
     public LayerMask mask;
     private Animator anim;
@@ -20,7 +21,7 @@ public class PushTile : MonoBehaviour {
         Collider2D coll = Physics2D.OverlapBox(transform.position, size, 0, mask);
         if (coll != null && coll.tag == "Player")
         {
-            coll.GetComponent<Player>().Push(pushPower);
+            coll.GetComponent<Player>().Push(pushPower, direction);
             anim.SetTrigger("push");
             isPushed = true;
         }
@@ -30,3 +31,4 @@ public class PushTile : MonoBehaviour {
         Gizmos.DrawWireCube(transform.position, size);
     }
 }
+public enum PushDirection {Up, Down, Left, Right}

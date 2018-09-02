@@ -9,4 +9,5 @@ public class GameParamSO : ScriptableObject {
     public float soundVolume;
     public float musicVolume;
     public int controllSize;
+    //public bool filesCreated;
 }

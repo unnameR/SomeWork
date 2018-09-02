@@ -13,14 +13,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterN: 1
   levelN: 7
-  attempts: 4
+  attempts: 0
   medalM: 0
   medalS: 0
   isLevelComplete: 0
   isLevelLock: 0
+  boss: 0
   currentTime: 0
   bestTime: 999
-  forMedalTime: 25
+  forMedalTime: 20
   levelName: MEAT FACTORY
   levelPrefab: {fileID: 1582009144918338, guid: 26d0c3525363d8c489bd277595903c5c,
     type: 2}

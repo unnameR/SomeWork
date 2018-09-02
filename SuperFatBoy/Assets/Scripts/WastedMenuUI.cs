@@ -16,7 +16,7 @@ public class WastedMenuUI : MonoBehaviour {
     {
         if (haveCheckpoint)
         {
-            cost = 2 * LevelManager.instance.respawnBayCount;//если будут бесплатные респы, надо поменять.
+            cost = 2 * LevelManager.instance.respawnBuyCount;//если будут бесплатные респы, надо поменять.
             attemptTxt.text = "ATTEMPT " + gameParam.currentLevel.attempts.ToString();
             costTxt.text = cost.ToString();
 
@@ -37,7 +37,7 @@ public class WastedMenuUI : MonoBehaviour {
     public void BuyRespawn()
     {
         gameParam.playerMoney -= cost;
-        LevelManager.instance.respawnBayCount++;
+        LevelManager.instance.respawnBuyCount++;
         LevelManager.instance.Respawn();
     }
 }

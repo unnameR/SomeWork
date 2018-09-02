@@ -80,7 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosionSound: {fileID: 11400000, guid: b6e911f92f12dcc42b89d435d2759d43, type: 2}
   hitSound: {fileID: 11400000, guid: 2e2cfbb6cf9f74a4f96d42810058389a, type: 2}
-  flySpeed: 10
+  flySpeed: 11
   rotationSpeed: 5
   radius: 0.2
   mask:

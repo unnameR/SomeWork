@@ -14,7 +14,7 @@ public class ChapterMenu : MonoBehaviour {
     public Image progressBarImg;
     public Image background;
 
-    private ChapterSO chapter;
+    private ChapterSO chapter;//
     private LevelButtonController oldActiveLevel;
     private int activeLevel;
 
@@ -46,7 +46,7 @@ public class ChapterMenu : MonoBehaviour {
     public void LoadLevelsParam(ChapterSO _chapter)
     {
         chapter = _chapter;
-        background.sprite = chapter.background;
+        background.sprite = _chapter.background;
         Init();
     }
     public void ActiveLevel(int number)
@@ -62,8 +62,9 @@ public class ChapterMenu : MonoBehaviour {
     public void Play()
     {
         gameParam.currentLevel = chapter.levels[activeLevel];
+        gameParam.currentChapter = chapter;
         Debug.Log(chapter.levels[activeLevel].chapterN + " - " + chapter.levels[activeLevel].levelN + " level loading...");
-        SceneManager.LoadScene(1);
+        //SceneManager.LoadScene("GameScene");
     }
 }
 

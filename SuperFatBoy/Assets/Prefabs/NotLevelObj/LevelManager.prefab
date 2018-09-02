@@ -61,9 +61,10 @@ MonoBehaviour:
   levelUI: {fileID: 0}
   wastedMenu: {fileID: 0}
   levelCompleteMenu: {fileID: 0}
+  sceneChanger: {fileID: 0}
   hitExitSound: {fileID: 11400000, guid: bbfbe51bf6225304ca4ba78fff43984f, type: 2}
   spawnCount: 3
-  respawnBayCount: 1
+  respawnBuyCount: 1
 --- !u!114 &114272416702683544
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -117,10 +118,3 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f5e25c62b8c741940b286a0cb27b1728, type: 2}
   - {fileID: 11400000, guid: 339dba33a91c8a649bf1303e24f5f647, type: 2}
   - {fileID: 11400000, guid: 53c8bc3637104c847b60dd15bb0342d3, type: 2}
-  - {fileID: 11400000, guid: d190f0f11b25f764bbf6eaeff2e21065, type: 2}
-  - {fileID: 11400000, guid: eeba173ceffe9f043abe4d319c638cf5, type: 2}
-  - {fileID: 11400000, guid: 01e3976bb65c3cd468b8328890fc87be, type: 2}
-  - {fileID: 11400000, guid: 511f07ad2b5264745aa7ab5af85099e2, type: 2}
-  - {fileID: 11400000, guid: a4fdd7883b88bc44ebaa000dd97d082a, type: 2}
-  - {fileID: 11400000, guid: b906a2fc128737b44825f46b8416b673, type: 2}
-  - {fileID: 11400000, guid: 995addb1927fef24a96663238413df13, type: 2}

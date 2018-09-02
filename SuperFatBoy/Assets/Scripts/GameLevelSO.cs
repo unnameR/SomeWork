@@ -10,6 +10,7 @@ public class GameLevelSO : ScriptableObject {
     public bool medalS;
     public bool isLevelComplete;
     public bool isLevelLock;
+    public bool boss;
     public float currentTime;
     public float bestTime = 999;
     public float forMedalTime;
@@ -19,6 +20,7 @@ public class GameLevelSO : ScriptableObject {
 
     public void ResetLevel()
     {
+        attempts = 0;
         bestTime = 0;
         medalM = medalS = false;
         isLevelComplete = false;

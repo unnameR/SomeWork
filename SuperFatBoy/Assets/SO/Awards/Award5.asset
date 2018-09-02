@@ -11,10 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 02ad8ad80db88894baefcb7d9ab46e04, type: 3}
   m_Name: Award5
   m_EditorClassIdentifier: 
-  awardName: MASTER OF FORREST
+  awardName: MASTER OF FOREST
   conditionName: CHAPTER 100
-  condition: 100
+  condition: 27
   revard: 200
   isComplete: 0
   isGetReward: 0
   icon: {fileID: 21300000, guid: c4494aef0b1e76a4cb124a6962090ac7, type: 3}
+  currentCondition: 0

@@ -4,18 +4,19 @@ using UnityEngine;
 [CustomEditor(typeof(GameLevelSO))]
 public class ResetLevelSOEditor : Editor
 {
-    GameLevelSO mission;
+    GameLevelSO level;
     void OnEnable()
     {
-        mission = (GameLevelSO)target;
+        level = (GameLevelSO)target;
     }
     public override void OnInspectorGUI()
     {
         base.OnInspectorGUI();
         if (GUILayout.Button("Reset Level"))
         {
-            mission.ResetLevel();
+            level.ResetLevel();
         }
+        //EditorUtility.SetDirty(level);
     }
 
 }

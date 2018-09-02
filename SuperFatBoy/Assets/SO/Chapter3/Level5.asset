@@ -13,10 +13,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chapterN: 3
   levelN: 5
+  attempts: 0
   medalM: 0
   medalS: 0
   isLevelComplete: 0
   isLevelLock: 1
-  bestTime: 0
+  boss: 0
+  currentTime: 0
+  bestTime: 999
   forMedalTime: 0
-  levelName: Start
+  levelName: Not Complate5
+  levelPrefab: {fileID: 0}

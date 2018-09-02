@@ -21,10 +21,13 @@ public class LevelCompleteMenu : MonoBehaviour {
     }*/
     public void LevelComplete(bool medal, bool secret)
     {
-        if (medal)//одна анимация перебиает другую...
+        if (medal && !secret)
             anim.SetTrigger("activeM");
-        if (secret)
+        else if (!medal && secret)
             anim.SetTrigger("activeS");
+        else if (medal && secret)
+            anim.SetTrigger("activeMS");
+
         StartCoroutine(MenuLife());
     }
     IEnumerator MenuLife()

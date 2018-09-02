@@ -18,9 +18,10 @@ MonoBehaviour:
   medalS: 0
   isLevelComplete: 0
   isLevelLock: 0
+  boss: 0
   currentTime: 0
   bestTime: 999
   forMedalTime: 15
-  levelName: SHOP
+  levelName: EASY
   levelPrefab: {fileID: 1961222469487538, guid: e4cdfb0bbb441b044811dbadb6e903ec,
     type: 2}

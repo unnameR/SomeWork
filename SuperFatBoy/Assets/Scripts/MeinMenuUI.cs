@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class MeinMenuUI : MonoBehaviour {
 
+    public AwardSO gameAll;
+    public AwardSO gameHalf;
     public GameObject[] chaptersIcon;
     public GameObject[] lockIcons;
     public Text[] chaptersText;
@@ -22,6 +24,17 @@ public class MeinMenuUI : MonoBehaviour {
     public void SetProgress(int progress, int max)
     {
         float progressPercent = (float)progress / max;
+
+        if (progressPercent >= 0.5f)
+        {
+            gameHalf.isComplete = true;
+            DataSaver.SaveData(gameHalf, gameHalf.awardName);
+        }
+        if (progressPercent == 1)
+        {
+            gameAll.isComplete = true;
+            DataSaver.SaveData(gameAll, gameAll.awardName);
+        }
 
         progressTxt.text = (progressPercent * 100).ToString("f0") + "%";
         progressBarImg.fillAmount = (float)progress / max;

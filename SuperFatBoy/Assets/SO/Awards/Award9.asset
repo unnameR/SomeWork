@@ -13,8 +13,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   awardName: NINJA
   conditionName: ALL
-  condition: 100
+  condition: 27
   revard: 300
   isComplete: 0
   isGetReward: 0
   icon: {fileID: 21300000, guid: f305e8ff18e8fd14989e1eae9204fb65, type: 3}
+  currentCondition: 0

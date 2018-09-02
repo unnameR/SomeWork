@@ -11,12 +11,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b805d229e4fafd44a97a64ef45a773a, type: 3}
   m_Name: Level9Boss
   m_EditorClassIdentifier: 
-  chapterN: 2
+  chapterN: 3
   levelN: 9
+  attempts: 0
   medalM: 0
   medalS: 0
   isLevelComplete: 0
   isLevelLock: 1
-  bestTime: 0
-  forMedalTime: 0
-  levelName: Boss
+  boss: 1
+  currentTime: 0
+  bestTime: 999
+  forMedalTime: 999
+  levelName: BOSS2
+  levelPrefab: {fileID: 1759883510808172, guid: e880e4e6d5c133d409e59ae594d1f908,
+    type: 2}

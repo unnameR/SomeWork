@@ -12,10 +12,11 @@ public class LevelManager : MonoBehaviour {
     public LevelUI levelUI;
     public WastedMenuUI wastedMenu;
     public LevelCompleteMenu levelCompleteMenu;
+    public SceneChanger sceneChanger;
 
     public SoundSO hitExitSound;
     public int spawnCount = 3;
-    public int respawnBayCount=1;
+    [HideInInspector]public int respawnBuyCount = 1;
     //int attempt;
     float currentTime;
     bool isSecretFind;
@@ -32,6 +33,7 @@ public class LevelManager : MonoBehaviour {
         currentTime = 0;
         gameParam.currentLevel.attempts = 1;
         levelUI.SetControllUISize(gameParam.controllSize);
+        levelUI.SetCoins(gameParam.playerMoney);
     }
     void Start()
     {
@@ -42,7 +44,7 @@ public class LevelManager : MonoBehaviour {
             ps.SetStartSpawnPoint(spawn);
         //на всю главу 1 саундтре. Он заканчивается, начинается следущий
         //AudioManager._instance.PlaySoundEffect(gameParam.currentChapter.chapterMainSound);
-        if (gameParam.currentLevel.levelName != "BOSS")//привязка к имени - гавнецо.
+        if (!gameParam.currentLevel.boss)
         {
             nextlevel = gameParam.currentChapter.levels[gameParam.currentLevel.levelN];
         }
@@ -78,26 +80,23 @@ public class LevelManager : MonoBehaviour {
     }
     public void NextLevel()
     {
-        if (gameParam.currentLevel.levelName == "BOSS")//привязка к имени - гавнецо.
+        if (gameParam.currentLevel.boss)
         {
             levelUI.ChapterComplete();
             return;
         }
-        if (nextlevel.levelName == "BOSS")//если следущий уровень боссо - выйти в текущую главу
+        if (nextlevel.boss)//если следущий уровень босca - выйти в текущую главу
         {
-            BackToMainMenu();//доделать
+            sceneChanger.SetSceneName("MenuScene");//доделать
+            return;
         }
         gameParam.currentLevel = nextlevel;
-        
-        SceneManager.LoadScene(1);
+
+        StartCoroutine(Restart());//хм..
     }
     public void PauseGame(bool isPause)
     {
         Time.timeScale = isPause ? 0 : 1;
-    }
-    public void BackToMainMenu()
-    {
-        SceneManager.LoadScene(0);
     }
     public void SetCheckpoint(Transform point)
     {
@@ -109,7 +108,6 @@ public class LevelManager : MonoBehaviour {
         //Записывать данные об уровне.
         bool medal = false;
         bool secret = false;
-
         AudioManager._instance.PlaySoundEffect(hitExitSound);
         stopTimer = true;
 
@@ -130,30 +128,34 @@ public class LevelManager : MonoBehaviour {
             awardsController.SetAward("FIRST MEDAL");
             awardsController.SetAward("EXPLORER");
             gameParam.currentLevel.medalM = true;
-            medal = true;
             //gameParam.currentChapter.progress++;
         }
+
+        medal = currentTime <= gameParam.currentLevel.forMedalTime;
+
         gameParam.currentLevel.currentTime = currentTime;
         //gameParam.currentLevel.attempts = attempt;
 
-
-        if (nextlevel.levelName != "BOSS")
+        if (!nextlevel.boss)
             nextlevel.isLevelLock = false;
 
         levelUI.gameObject.SetActive(false);
         levelCompleteMenu.gameObject.SetActive(true);//
         levelCompleteMenu.LevelComplete(medal, secret);
         //levelUI.LevelComplete();
+
+        DataSaver.SaveData(gameParam, gameParam.name);
+        DataSaver.SaveData(gameParam.currentLevel, gameParam.currentLevel.levelName);
     }
     public void Respawn()
     {
-        //StartCoroutine(Restart());//разделить респаун и рестарт уровня.
         gameParam.currentLevel.attempts++;
         ps.SpawnPlayer();
         Player.deathEvent += PlayerDie;
     }
     void PlayerDie()
     {
+        levelUI.DeadScreen();
         stopTimer = true;
         isSecretFind = false;
         ReplayManager.instance.StopRecording();
@@ -174,7 +176,7 @@ public class LevelManager : MonoBehaviour {
     {
         yield return new WaitForSeconds(0.5f);
         //currentTime = 0;
-        SceneManager.LoadScene(1);//перезагружаем сцену.Плохое решение..
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);//перезагружаем сцену.Плохое решение..
     }
     IEnumerator Wasted()
     {

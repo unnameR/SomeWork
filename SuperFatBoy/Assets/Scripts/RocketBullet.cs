@@ -59,7 +59,7 @@ public class RocketBullet : MonoBehaviour {
 
         Destroy(gameObject);
     }
-    void OnDrawGizmos()
+    void OnDrawGizmosSelected()
     {
         Gizmos.DrawWireSphere(transform.position, radius);
     }

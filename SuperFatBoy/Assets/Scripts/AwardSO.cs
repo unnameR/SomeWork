@@ -10,7 +10,7 @@ public class AwardSO : ScriptableObject {
     public bool isComplete;
     public bool isGetReward;
     public Sprite icon;
-    [HideInInspector]public int currentCondition;
+    public int currentCondition;
 
     public void SetAward()
     {
