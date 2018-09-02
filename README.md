@@ -5,4 +5,4 @@ SpaceArcade - 07.2017
 
 SideScrollerRPG - for Android - 05.2018
 
-SuperFatBoy - for Android - 02.09.2018
+SuperFatBoy - for Android - 08.2018
