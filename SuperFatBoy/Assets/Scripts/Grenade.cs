@@ -23,7 +23,7 @@ public class Grenade : MonoBehaviour {
     }
     void Update()
     {
-        Collider2D coll = Physics2D.OverlapCircle(transform.position, collider.radius+0.01f, mask);
+        Collider2D coll = Physics2D.OverlapCircle(transform.position, collider.radius, mask);
         if (coll != null && coll.tag == "Player")//нужно просимулировать отскоки
         {
             //coll.GetComponent<Controller2D>().collisions.hitEnemy = true;

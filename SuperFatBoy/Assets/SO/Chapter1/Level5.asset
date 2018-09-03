@@ -21,7 +21,7 @@ MonoBehaviour:
   boss: 0
   currentTime: 0
   bestTime: 999
-  forMedalTime: 25
+  forMedalTime: 20
   levelName: UNDERGROUND
   levelPrefab: {fileID: 1040787295790608, guid: a161b232e71e745429149b707f03357a,
     type: 2}

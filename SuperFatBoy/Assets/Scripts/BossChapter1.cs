@@ -14,8 +14,13 @@ public class BossChapter1 : MonoBehaviour {
     public Vector2[] localWaypoints;
     Vector2[] globalWaypoints;
 
+    Transform player;
     int currentWaypoint;
     bool isMovind;
+    void Awake()
+    {
+        PlayerSpawner.spawnEvent += SetPlayerPos;
+    }
     void Start()
     {
         globalWaypoints = new Vector2[localWaypoints.Length];
@@ -37,8 +42,8 @@ public class BossChapter1 : MonoBehaviour {
                 isMovind = true;
                 
                 StartCoroutine(MoveTo());
-                DropGrenade(coll.transform);//2grenade drop
-                DropGrenade(coll.transform);
+                DropGrenade();//2grenade drop
+                DropGrenade();
             }
             if (coll.tag == "MoveBox")
             {
@@ -49,13 +54,18 @@ public class BossChapter1 : MonoBehaviour {
             }
         }
     }
-
-    private void DropGrenade(Transform player)
+    void SetPlayerPos(Transform playerPos)
+    {
+        player = playerPos;
+    }
+    private void DropGrenade()
     {
         //спаун гранат
+        if (!player)//Если игрок убит
+            return;
         GameObject gr = Instantiate(grenade, transform.position, transform.rotation);
         Vector2 dir = player.position - transform.position;
-        float dropForce = Random.Range(3f, 10f);
+        float dropForce = Random.Range(3f, 15f);
         gr.GetComponent<Rigidbody2D>().AddForce(dir.normalized * dropForce, ForceMode2D.Impulse);
     }
     
@@ -66,7 +76,7 @@ public class BossChapter1 : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, globalWaypoints[currentWaypoint], moveSpeed*Time.deltaTime);//easedPercentBetweenWaypoints);
             if (transform.position == (Vector3)globalWaypoints[currentWaypoint])
             {
-                //DropGrenade();//
+                DropGrenade();
 
                 if (currentWaypoint < globalWaypoints.Length - 1)
                     currentWaypoint++;
@@ -75,6 +85,10 @@ public class BossChapter1 : MonoBehaviour {
             }
             yield return null;
         }
+    }
+    void OnDisable()
+    {
+        PlayerSpawner.spawnEvent -= SetPlayerPos;
     }
     void OnDrawGizmos()
     {

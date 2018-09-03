@@ -20,7 +20,6 @@ public class ChapterComplateMenuUI : MonoBehaviour {
     public void NextChapter()
     {
         //load main menu scene and Active next chapter
-        LevelManager.instance.BackToMainMenu();//не так
     }
     int LevelsComplete()
     {

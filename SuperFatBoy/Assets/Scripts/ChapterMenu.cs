@@ -63,8 +63,12 @@ public class ChapterMenu : MonoBehaviour {
     {
         gameParam.currentLevel = chapter.levels[activeLevel];
         gameParam.currentChapter = chapter;
-        Debug.Log(chapter.levels[activeLevel].chapterN + " - " + chapter.levels[activeLevel].levelN + " level loading...");
-        //SceneManager.LoadScene("GameScene");
+
+        gameParam.currentLevel.hideFlags = HideFlags.DontUnloadUnusedAsset;
+        gameParam.currentChapter.hideFlags = HideFlags.DontUnloadUnusedAsset;
+
+        //Debug.Log(chapter.levels[activeLevel].chapterN + " - " + chapter.levels[activeLevel].levelN + " level loading...");
+        
     }
 }
 

@@ -21,7 +21,7 @@ MonoBehaviour:
   boss: 0
   currentTime: 0
   bestTime: 999
-  forMedalTime: 25
+  forMedalTime: 20
   levelName: MAD PAYNE
   levelPrefab: {fileID: 1686397492273830, guid: 5883ae6771b5a904baedcd700913283c,
     type: 2}

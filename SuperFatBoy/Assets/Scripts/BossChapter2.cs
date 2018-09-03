@@ -39,7 +39,7 @@ public class BossChapter2 : MonoBehaviour {
             nextShootTime = Time.time + laserCooldown + laserWait + laserDuration;
             StartCoroutine(LaserShoot());
         }
-        //движение
+        //движение должно быть тут, но я схалтурил и просто втулил скрипт движения платформ:)
 	}
     public void DropKey()
     {

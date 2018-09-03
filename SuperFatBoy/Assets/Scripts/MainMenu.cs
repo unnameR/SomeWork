@@ -19,6 +19,9 @@ public class MainMenu : MonoBehaviour {
     void OnEnable()//долго грузится. Нужно сделать нормально
     {
         progressAll = 0;
+        levelsAll = 0;
+        medalsAll = 0;
+        secretsAll = 0;
         for (int i = 0; i < chaptersSO.Length; i++)
         {
             meinMenuUI.UnlockIcon(i, chaptersSO[i].isLock);
@@ -38,8 +41,7 @@ public class MainMenu : MonoBehaviour {
             medalAll.isComplete = medalsAll == medalAll.condition;
             DataSaver.SaveData(medalAll, medalAll.awardName);
         }
-
-        meinMenuUI.SetProgress(progressAll, levelsAll * chaptersSO.Length);
+        meinMenuUI.SetProgress(progressAll, levelsAll);// * chaptersSO.Length);
 
         ChapterSO[] notLock = System.Array.FindAll<ChapterSO>(chaptersSO, ch => !ch.isLock);
         chapterCount = notLock.Length - 1;

@@ -21,7 +21,7 @@ MonoBehaviour:
   boss: 0
   currentTime: 0
   bestTime: 999
-  forMedalTime: 30
+  forMedalTime: 25
   levelName: HOTEL
   levelPrefab: {fileID: 1709435545603576, guid: 7eae79060ec5ac648b01617e59fc6ced,
     type: 2}
